@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" class="logo" alt=""></a>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Продукция</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>ЭТО ТО ЧТО <br><span>Я-ЛЮБЛЮ</span></h2>
+                <p>Великолепный вкус легендарной классики.Выбирай максимум вкуса без сахара. Без вопросов. Pepsi Max.Насладись освежающим и насыщенным вкусом дерзкой вишни вместе с Pepsi Cherry. Сочный вкус, тропический вайб и хорошее настроение – всё это
+                    в одном Pepsi Mango.</p>
+                <a href="#">Просмотреть </a>
+            </div>
+            <div class="imgBox">
+                <img src="images/pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="facebook.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="twitter.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="instagram.png"></a>
+            </li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.pepsi').src = anything;
+        }
+
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
